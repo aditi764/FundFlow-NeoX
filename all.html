@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Campaigns</title>
+    <style>
+        /* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: rgb(76,45,184);
+    background: linear-gradient(90deg, rgba(76,45,184,1) 0%, rgba(176,78,201,1) 41%, rgba(0,212,255,1) 100%);     color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Campaign List Styles */
+#campaignList {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#campaignList h3 {
+    font-size: 1.5rem;
+    color: #f0f8ff;
+    margin-bottom: 10px;
+}
+
+#campaignList p {
+    font-size: 1rem;
+    color: #d1e7ff;
+    margin-bottom: 10px;
+}
+
+#campaignList hr {
+    border: none;
+    height: 1px;
+    background: #ffffff;
+    margin: 10px 0;
+    opacity: 0.5;
+}
+
+/* Back Button */
+button {
+    background-color: #4b6cb7;
+    background-image: linear-gradient(90deg, #4b6cb7, #182848);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-image: linear-gradient(90deg, #182848, #4b6cb7);
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #campaignList {
+        width: 95%;
+    }
+
+    #campaignList h3 {
+        font-size: 1.3rem;
+    }
+
+    #campaignList p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.8.1/web3.min.js"></script>
+</head>
+<body>
+    <h1>All Campaigns</h1>
+    <div id="campaignList"></div>
+    <button onclick="location.href='index.html'">Back to Home</button>
+    <button onclick="location.href='create.html'">Fund Campaign</button>
+    <script src="all.js"></script>
+</body>
+</html>

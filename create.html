@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowdfunding DApp</title>
+    <style>
+        /* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: rgb(76,45,184);
+    background: linear-gradient(90deg, rgba(76,45,184,1) 0%, rgba(176,78,201,1) 41%, rgba(0,212,255,1) 100%); 
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 20px 0 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Styles */
+form {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Fields */
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Buttons */
+button {
+    background-color: #4b6cb7;
+    background-image: linear-gradient(90deg, #4b6cb7, #182848);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-image: linear-gradient(90deg, #182848, #4b6cb7);
+    transform: scale(1.05);
+}
+
+/* Link Button */
+button[onclick] {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.8.1/web3.min.js"></script>
+</head>
+<body>
+
+    <h2>Create Campaign</h2>
+    <form id="createCampaignForm">
+        <input type="text" id="title" placeholder="Campaign Title" required>
+        <input type="text" id="description" placeholder="Campaign Description" required>
+        <input type="number" id="goalAmount" placeholder="Goal Amount (ETH)" required>
+        <button type="submit">Create Campaign</button>
+    </form>
+
+    <h2>Fund Campaign</h2>
+    <form id="fundCampaignForm">
+        <input type="number" id="campaignId" placeholder="Campaign ID" required>
+        <input type="number" id="fundAmount" placeholder="Amount to Fund (ETH)" required>
+        <button type="submit">Fund Campaign</button>
+    </form>
+
+    <h2>Withdraw Funds</h2>
+    <form id="withdrawForm">
+        <input type="number" id="withdrawCampaignId" placeholder="Campaign ID" required>
+        <button type="submit">Withdraw Funds</button>
+    </form>
+
+    <button onclick="location.href='all.html'">View All Campaigns</button>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
