@@ -11,12 +11,12 @@ Fund Flow is a decentralized crowdfunding platform built on NEOX Chain. It enabl
 
 ## Contract Details
 
-- **Contract Address**: `0xE6A94BC029C4e99065Ca6FE0ED1c492985b58DEA`
+- **Contract Address**: `0x57AE8f834622b65cE7BfB0dD801F2403c5ee4907`
 - **Network**: NEOX TESTNET
 
 ## Deployment
 
-- **Contract Address**: [View on Explorer](https://xt4scan.ngd.network/address/0xE6A94BC029C4e99065Ca6FE0ED1c492985b58DEA)
+- **Contract Address**: [View on Explorer](https://xt4scan.ngd.network/address/0x57AE8f834622b65cE7BfB0dD801F2403c5ee4907)
 - **Coin Used**: GAS
 
 
